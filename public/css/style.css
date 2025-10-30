@@ -1,14 +1,32 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* style.css */
+
+/* Base body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-body {
-    font-size: 36px;
-    min-height: 100vh;
-    color: #fff;
-    background-color: #000;
-    display: grid;
-    place-content: center;
+/* Heading spacing */
+h1, h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Paragraph spacing */
+p {
+  margin-bottom: 20px;
+}
+
+/* List styling */
+ul {
+  margin-bottom: 30px;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+li {
+  margin-bottom: 10px;
 }
