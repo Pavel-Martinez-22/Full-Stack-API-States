@@ -1,5 +1,7 @@
 Name: Pavel Martinez <br>
-Description: This project demonstrates my ability to build a PHP-based object-oriented REST API for managing quotations, supporting full CRUD operations via GET, POST, PUT, and DELETE requests. The backend was developed using PHP and PostgreSQL, with environment variables for secure configuration, and deployed to Render after local testing with Postman and XAMPP. On the frontend, I used JavaScript, PHP, and CSS to fetch and display JSON data returned by the API. JavaScript handles asynchronous requests and dynamically injects the content into the appropriate HTML elements. To streamline deployment and ensure consistency across environments, I containerized the entire application using Docker and deployed it as a web service.<br>
+Description: This project showcases my ability to build a RESTful API using Node.js, Express, and MongoDB to manage U.S. state data. I structured the application using the Model-View-Controller (MVC) pattern to ensure clean separation of concerns and maintainable code. The server handles full CRUD operations via GET, POST, PATCH, and DELETE requests, with routes defined in Express and validated through custom middleware.<br>
+
+I used Mongoose to define and enforce a schema for MongoDB, enabling structured storage of state-specific fun facts. The API merges static JSON data with dynamic database content using a custom function, allowing enriched responses while preserving original metadata. I tested all endpoints locally using Postman to verify proper JSON responses and error handling.<br>
 Website link: https://full-stack-api-states.onrender.com/
 
 
