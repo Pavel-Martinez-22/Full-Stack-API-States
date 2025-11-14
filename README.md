@@ -1,7 +1,7 @@
 <p> Name: Pavel Martinez </p>
 <p>Project Title: RESTful API using Node.js</p>
  <p>
-  This project showcases my ability to build a RESTful API using Node.js, Express, and
+  Descriptoin: This project showcases my ability to build a RESTful API using Node.js, Express, and
   MongoDB to manage U.S. state data. I structured the application using the
   Model-View-Controller (MVC) pattern to ensure clean separation of concerns and
   maintainable code. The server handles full CRUD operations via GET, POST, PATCH, and
