@@ -1,5 +1,5 @@
 <p> Name: Pavel Martinez </p>
-<p>RESTful API using Node.js</p>
+<p>Project Title: RESTful API using Node.js</p>
  <p>
   This project showcases my ability to build a RESTful API using Node.js, Express, and
   MongoDB to manage U.S. state data. I structured the application using the
