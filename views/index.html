@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,30 +7,92 @@
     <title>Index</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
-    <body>
     <h1>API States</h1>
 
-    <!-- Project description paragraph -->
+    <!-- Project description -->
     <p>
-      This project focused primarily on building a backend API with Node.js; thus, a front end was not fully built.
+      This project focuses on building a backend REST API using Node.js, Express, and MongoDB. A
+      frontend was not implemented. All interaction with the API is done via HTTP requests.
     </p>
-    <p>However, the following calls work in the address bar:</p>
 
-    <!-- Accepted request list -->
-    <h2>Get Accepted Requests <em>(:states - must be an abbreviation of a state)</em></h2>
+    <p>
+      <strong>Note:</strong> GET requests can be tested in the browser address bar. POST, PATCH, and
+      DELETE requests require an API client such as <em>Postman</em>.
+    </p>
+
+    <!-- GET requests -->
+    <h2>GET Accepted Requests</h2>
+    <p><em>:state must be a valid US state abbreviation</em></p>
+
     <ul>
-      <li>/states/</li>
-      <li>/states/?contig=true</li>
-      <li>/states/?contig=false</li>
-      <li>/states/:state/funfact</li>
-      <li>/states/:state/capital</li>
-      <li>/states/:state/nickname</li>
-      <li>/states/:state/population</li>
-      <li>/states/:state/admission</li>
+      <li>GET /states</li>
+      <li>GET /states?contig=true</li>
+      <li>GET /states?contig=false</li>
+      <li>GET /states/:state</li>
+      <li>GET /states/:state/funfact</li>
+      <li>GET /states/:state/capital</li>
+      <li>GET /states/:state/nickname</li>
+      <li>GET /states/:state/population</li>
+      <li>GET /states/:state/admission</li>
     </ul>
-  </body>
 
+    <!-- POST -->
+    <h2>POST Requests</h2>
+
+    <p>Add one or more fun facts for a state.</p>
+
+    <ul>
+      <li><strong>POST /states/:state/funfact</strong></li>
+    </ul>
+
+    <p><strong>Example Request Body:</strong></p>
+    <pre>
+{
+  "funfacts": [
+    "Texas was once its own country.",
+    "Dr Pepper was invented in Texas."
+  ]
+}
+    </pre>
+
+    <!-- PATCH -->
+    <h2>PATCH Requests</h2>
+
+    <p>Update an existing fun fact by index (1-based).</p>
+
+    <ul>
+      <li><strong>PATCH /states/:state/funfact</strong></li>
+    </ul>
+
+    <p><strong>Example Request Body:</strong></p>
+    <pre>
+{
+  "index": 1,
+  "funfact": "Texas is larger than France."
+}
+    </pre>
+
+    <!-- DELETE -->
+    <h2>DELETE Requests</h2>
+
+    <p>Delete a fun fact by index (1-based).</p>
+
+    <ul>
+      <li><strong>DELETE /states/:state/funfact</strong></li>
+    </ul>
+
+    <p><strong>Example Request Body:</strong></p>
+    <pre>
+{
+  "index": 2
+}
+    </pre>
+
+    <!-- Footer note -->
+    <p>
+      All POST, PATCH, and DELETE requests must include the header:
+      <code>Content-Type: application/json</code>.
+    </p>
   </body>
 </html>
