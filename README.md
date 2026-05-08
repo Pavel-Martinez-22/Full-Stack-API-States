@@ -12,7 +12,6 @@ I used Mongoose to define and enforce a schema for MongoDB, enabling structured 
 
 ## Live Website
 
-<a href="
-https://full-stack-api-states.onrender.com/">
-Website link
+<a href="https://full-stack-api-states.onrender.com/" target="_blank" rel="noopener noreferrer">
+View Project
 </a>
